@@ -3,7 +3,7 @@ Eigennamen- und Zitaterkennung in Rechtstexten
 
 ## Juristisches Korpus
 
-Das Korpus besteht aus 750 Entscheidungen der Jahre 2017-2018, die vom Bundesministerium der Justiz und für Verbraucherschutz auf dem Portal ['Rechtsprechung im Internet'](http://www.rechtsprechung-im-internet.de) veröffentlicht wurden. 
+Das Korpus besteht aus 750 Entscheidungen der Jahre 2017-2018, die vom Bundesministerium der Justiz und für Verbraucherschutz auf dem Portal ['Rechtsprechung im Internet'](http://www.rechtsprechung-im-internet.de) veröffentlicht wurden. Die Entscheidungen stammen aus sieben Bundesgerichten: Bundesarbeitsgericht (BAG), Bundesfinanzhof (BFH), Bundesgerichtshof (BGH), Bundespatentgericht (BPatG), Bundessozialgericht (BSG), Bundesverfassungsgericht (BVerfG) und Bundesverwaltungsgericht (BVerwG).
 
 ### Korpusgröße
 
@@ -38,6 +38,42 @@ Das Korpus besteht aus 750 Entscheidungen der Jahre 2017-2018, die vom Bundesmin
 | **RS**     | Rechtsprechungen   | 12.580 | 23,46 %    |
 | **LIT**    | Literatur          | 3.006  | 5,60 %     |
 |        | Anzahl Entitäten   | **53.632** | 100 %      |
+
+### Datenformat
+Das Korpus steht im CoNLL-2002-Format zur Verfügung. Die Daten sind in zwei Spalten aufgeteilt, die mit einem Leerzeichen getrennt sind. Jedes Wort befindet sich in einer Zeile. Die Satzgrenze ist mit einer leeren Zeile markiert. Die erste Spalte enthält ein Wort und die zweite ein Tag im IOB2-Format.
+
+| Wort                | Tag   |
+|---------------------|-------|
+| Am                  | O     |
+| 7.                  | O     |
+| März                | O     |
+| 2006                | O     |
+| fand                | O     |
+| ein                 | O     |
+| Treffen             | O     |
+| der                 | O     |
+| saarländischen      | B-INN |
+| Landesregierung     | I-INN |
+| unter               | O     |
+| Vorsitz             | O     |
+| des                 | O     |
+| Ministerpräsidenten | O     |
+| Müller              | B-RR  |
+| mit                 | O     |
+| Vertretern          | O     |
+| der                 | O     |
+| Evangelischen       | B-ORG |
+| Kirche              | I-ORG |
+| im                  | I-ORG |
+| Rheinland           | I-ORG |
+| und                 | O     |
+| der                 | O     |
+| Evangelischen       | B-ORG |
+| Kirche              | I-ORG |
+| der                 | I-ORG |
+| Pfalz               | I-ORG |
+| statt               | O     |
+| .                   | O     |
 
 ## CRF
 ## BLSTM
