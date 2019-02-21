@@ -13,26 +13,26 @@ Eigennamen- und Zitateerkennung in Rechtstexten
 
 | Klasse | Bezeichnung        | Anzahl | Verteilung |
 |--------|--------------------|--------|------------|
-| PER    | Personen           | 1.747  | 3,26 %     |
-| AN     | Anwälte            | 111    | 0,21 %     |
-| RR     | Richter            | 1.519  | 2,83 %     |
-| LD     | Länder             | 1.429  | 2,66 %     |
-| ST     | Städte             | 705    | 1,31 %     |
-| STR    | Straßen            | 136    | 0,25 %     |
-| LDS    | Landschaften       | 198    | 0,37 %     |
-| ORG    | Organisationen     | 1.166  | 2,17 %     |
-| UN     | Unternehmen        | 1.058  | 1,97 %     |
-| INN    | Institutionen      | 2.196  | 4,09 %     |
-| GRT    | Gerichte           | 3.212  | 5,99 %     |
-| MRK    | Marken             | 283    | 0,53 %     |
-| GS     | Gesetze            | 18.520 | 34,53 %    |
-| VO     | Verordnungen       | 797    | 1,49 %     |
-| EUN    | Europäische Normen | 1.499  | 2,79 %     |
-| VS     | Vorschriften       | 607    | 1,13 %     |
-| VT     | Verträge           | 2.863  | 5,34 %     |
-| RS     | Rechtsprechungen   | 12.580 | 23,46 %    |
-| LIT    | Literatur          | 3.006  | 5,60 %     |
-|        | Anzahl Entitäten   | 53.632 | 100 %      |
+| **PER**    | Personen           | 1.747  | 3,26 %     |
+| **AN**     | Anwälte            | 111    | 0,21 %     |
+| **RR**     | Richter            | 1.519  | 2,83 %     |
+| **LD**     | Länder             | 1.429  | 2,66 %     |
+| **ST**     | Städte             | 705    | 1,31 %     |
+| **STR**    | Straßen            | 136    | 0,25 %     |
+| **LDS**    | Landschaften       | 198    | 0,37 %     |
+| **ORG**    | Organisationen     | 1.166  | 2,17 %     |
+| **UN**     | Unternehmen        | 1.058  | 1,97 %     |
+| **INN**    | Institutionen      | 2.196  | 4,09 %     |
+| **GRT**    | Gerichte           | 3.212  | 5,99 %     |
+| **MRK**    | Marken             | 283    | 0,53 %     |
+| **GS**     | Gesetze            | 18.520 | 34,53 %    |
+| **VO**     | Verordnungen       | 797    | 1,49 %     |
+| **EUN**    | Europäische Normen | 1.499  | 2,79 %     |
+| **VS**     | Vorschriften       | 607    | 1,13 %     |
+| **VT**     | Verträge           | 2.863  | 5,34 %     |
+| **RS**     | Rechtsprechungen   | 12.580 | 23,46 %    |
+| **LIT**    | Literatur          | 3.006  | 5,60 %     |
+|        | **Anzahl Entitäten   | 53.632 | 100 %**      |
 
 ## CRF
 ## BLSTM
