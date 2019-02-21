@@ -1,7 +1,11 @@
 # Legal-Entity-Recognition
-Eigennamen- und Zitateerkennung in Rechtstexten
+Eigennamen- und Zitaterkennung in Rechtstexten
 
 ## Juristisches Korpus
+
+Das Korpus besteht aus 750 Entscheidungen der Jahre 2017-2018, die vom Bundesministerium der Justiz und für Verbraucherschutz auf dem Portal ['Rechtsprechung im Internet'](http://www.rechtsprechung-im-internet.de) veröffentlicht wurden. 
+
+### Korpusgröße
 
 |                          | LER       |
 |--------------------------|-----------|
@@ -10,6 +14,7 @@ Eigennamen- und Zitateerkennung in Rechtstexten
 | Sätze                    | 66.723    |
 | Verteilung der Entitäten | 19,15 %   |
 
+### Verteilung der Klassen
 
 | Klasse | Bezeichnung        | Anzahl | Verteilung |
 |--------|--------------------|--------|------------|
@@ -32,7 +37,7 @@ Eigennamen- und Zitateerkennung in Rechtstexten
 | **VT**     | Verträge           | 2.863  | 5,34 %     |
 | **RS**     | Rechtsprechungen   | 12.580 | 23,46 %    |
 | **LIT**    | Literatur          | 3.006  | 5,60 %     |
-|        | **Anzahl Entitäten   | 53.632 | 100 %**      |
+|        | Anzahl Entitäten   | **53.632** | 100 %      |
 
 ## CRF
 ## BLSTM
