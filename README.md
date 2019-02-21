@@ -2,6 +2,14 @@
 Eigennamen- und Zitateerkennung in Rechtstexten
 
 ## Juristisches Korpus
+
+|                          | LER       |
+|--------------------------|-----------|
+| Token mit Satzzeichen    | 2.157.048 |
+| Token ohne Satzzeichen   | 1.868.355 |
+| Sätze                    | 66.723    |
+| Verteilung der Entitäten | 19,15 %   |
+
 ## CRF
 ## BLSTM
 
