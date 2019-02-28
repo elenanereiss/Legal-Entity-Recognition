@@ -33,19 +33,22 @@ model_name = str(sys.argv[1])
 
 # dataset splits
 train = str(sys.argv[2])
+if not os.path.isfile(train):
+    print("Error: train file does not appear to exist")
+    exit()
 dev = str(sys.argv[3])
+if not os.path.isfile(dev):
+    print("Error: dev file does not appear to exist")
+    exit()
 test = str(sys.argv[4])
+if not os.path.isfile(test):
+    print("Error: test file does not appear to exist")
+    exit()
 
 # create directory LER
 if not os.path.exists("data/LER/"):
     os.mkdir("data/LER2/")
     print("create directory data/LER")
-
-# check input
-for set in ["train", "dev", "test"]:
-    if not os.path.isfile(set):
-        print("Error: {} file does not appear to exist".format(set))
-        exit()
 
 # copy files to directory
 copyfile(train, 'data/LER/train.txt')
