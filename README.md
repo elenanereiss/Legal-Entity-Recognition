@@ -1,11 +1,12 @@
 # Legal-Entity-Recognition
 Eigennamen- und Zitaterkennung in Rechtstexten
 
-## Juristisches Korpus
+
+# Juristisches Korpus
 
 Das Korpus besteht aus 750 Entscheidungen der Jahre 2017-2018, die vom Bundesministerium der Justiz und für Verbraucherschutz auf dem Portal ['Rechtsprechung im Internet'](http://www.rechtsprechung-im-internet.de) veröffentlicht wurden. Die Entscheidungen stammen aus sieben Bundesgerichten: Bundesarbeitsgericht (BAG), Bundesfinanzhof (BFH), Bundesgerichtshof (BGH), Bundespatentgericht (BPatG), Bundessozialgericht (BSG), Bundesverfassungsgericht (BVerfG) und Bundesverwaltungsgericht (BVerwG).
 
-### Korpusgröße
+## Korpusgröße
 
 |                          | LER       |
 |--------------------------|-----------|
@@ -14,7 +15,7 @@ Das Korpus besteht aus 750 Entscheidungen der Jahre 2017-2018, die vom Bundesmin
 | Sätze                    | 66.723    |
 | Verteilung der Entitäten | 19,15 %   |
 
-### Verteilung der Klassen
+## Verteilung der Klassen
 
 | Klasse | Bezeichnung        | Anzahl | Verteilung |
 |--------|--------------------|--------|------------|
@@ -39,7 +40,7 @@ Das Korpus besteht aus 750 Entscheidungen der Jahre 2017-2018, die vom Bundesmin
 | **LIT**    | Literatur          | 3.006  | 5,60 %     |
 |        | Anzahl Entitäten   | **53.632** | 100 %      |
 
-### Datenformat
+## Datenformat
 Das Korpus steht im CoNLL-2002-Format zur Verfügung. Die Daten sind in zwei Spalten aufgeteilt, die mit einem Leerzeichen getrennt sind. Jedes Wort befindet sich in einer Zeile. Die Satzgrenze ist mit einer leeren Zeile markiert. Die erste Spalte enthält ein Wort und die zweite ein Tag im IOB2-Format.
 
 | Wort                | Tag   |
@@ -75,14 +76,14 @@ Das Korpus steht im CoNLL-2002-Format zur Verfügung. Die Daten sind in zwei Spa
 | statt               | O     |
 | .                   | O     |
 
-## CRF
-### Modelle
+# CRF
+## Modelle
 
 - CRF-F mit Features `f`;
 - CRF-FG mit Features und Gazetteers `fg`;
 - CRF-FGL mit Features, Gazetteers und Lookup-Tabelle für die Wortähnlichkeit `fgl`.
 
-### Training
+## Training
 - [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/) installieren;
 - Um Modelle `fg` und `fgl` zu trainieren, ist es nötig, Gazetteers zu Daten hinzuzufügen. Dabei werden neue Dateien im gleichen Ordner, wo die originalen Dateien sind, als `_gaz` gespeichert. Im Ordner `src/` ausführen:
 ```
@@ -95,14 +96,14 @@ python crf.py modelName trainPath testPath
 
 - Modelle werden in `models/` gespeichert.
 
-## BLSTM
-### Modelle
+# BLSTM
+## Modelle
 
 - BLSTM-CRF `crf`;
 - BLSTM-CRF mit Buchstabeneinbettungen aus BLSTM `blstm-crf`;
 - BLSTM-CNN-CRF mit Buchstabeneinbettungen aus CNN `cnn-crf`.
 
-### Training
+## Training
 
 - [BLSTM-CNN-CRF](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf) von UKPLab installieren;
 - `blstm.py` zum Ordner `emnlp2017-bilstm-cnn-crf/` kopieren, ein Modell wählen und ausführen:
@@ -110,5 +111,22 @@ python crf.py modelName trainPath testPath
 python blstm.py modelName trainPath devPath testPath
 ```
 - Modelle werden in `models/` gespeichert.
+
+# Requirements
+
+- [emnlp2017-bilstm-cnn-crf](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf)
+- [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/)
+- [SoMaJo](https://github.com/tsproisl/SoMaJo)
+
+# 
+
+> @mastersthesis{mastersthesis,
+>  author       = {Elena Leitner}, 
+>  title        = {Eigennamen- und Zitaterkennung in Rechtstexten},
+>  school       = {Universität Potsdam},
+>  year         = 2019,
+>  address      = {Potsdam},
+>  month        = 2,
+>}
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Dieses Werk ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.
