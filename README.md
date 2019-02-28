@@ -84,11 +84,11 @@ Das Korpus steht im CoNLL-2002-Format zur Verfügung. Die Daten sind in zwei Spa
 
 ### Training
 - [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/) installieren;
-- Um Modelle `fg` und `fgl` zu trainieren, ist es nötig, Gazetteers zu Daten hinzuzufügen. Im Ordner `gazetteers/` ausführen (z.B. train.conll und test.conll werden als train_gaz.conll und test_gaz.conll gespeichert):
+- Um Modelle `fg` und `fgl` zu trainieren, ist es nötig, Gazetteers zu Daten hinzuzufügen. Dabei werden neue Dateien im gleichen Ordner, wo die originalen Dateien sind, als `_gaz` gespeichert. Im Ordner `src/` ausführen:
 ```
 python gazetteers.py trainPath testPath
 ```
-- Mit neuen Files ausführen:
+- Mit neuen Dateien ausführen:
 ```
 python crf.py modelName trainPath testPath
 ```
