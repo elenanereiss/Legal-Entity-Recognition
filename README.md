@@ -84,7 +84,7 @@ Das Korpus steht im CoNLL-2002-Format zur Verfügung. Die Daten sind in zwei Spa
 
 ### Training
 - [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/) installieren
-- Für Training der CRF-FG und CRF-FGL ist es nötig, zu Daten Gazetteers hinzufügen. `blstm.py` zum Ordner `emnlp2017-bilstm-cnn-crf/` kopieren, ein Modell wählen und ausführen:
+- Für Training der CRF-FG und CRF-FGL ist es nötig, zu Daten Gazetteers hinzufügen. 
 
 ```
 python crf.py modelName trainPath testPath
