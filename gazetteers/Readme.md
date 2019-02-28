@@ -93,4 +93,18 @@ Gesetze im Internet: https://www.gesetze-im-internet.de/
 
 Das tagesaktuelle Inhaltsverzeichnis: https://www.gesetze-im-internet.de/gii-toc.xml
 
-### Download alle Gesetze
+## 4.3. VERWALTUNGSVORSCHRIFTEN
+
+Gesetze im Internet: http://www.verwaltungsvorschriften-im-internet.de/
+
+Das tagesaktuelle Inhaltsverzeichnis: https://www.gesetze-im-internet.de/gii-toc.xml
+
+# WORD SIMILARITY
+### GermaNER
+
+- Lookup-Tabelle "200k_2d_wordlists"
+- GermaNER is licensed under ASL 2.0 and other lenient licenses, allowing its use for academic and commercial purposes without restrictions.
+
+**Seite:** https://github.com/tudarmstadt-lt/GermaNER
+
+**Herunterladen:** https://github.com/tudarmstadt-lt/GermaNER/releases/download/germaNER0.9.1/data.zip
