@@ -1,5 +1,7 @@
 # Legal-Entity-Recognition
-Eigennamen- und Zitaterkennung in Rechtstexten
+## Eigennamen- und Zitaterkennung in Rechtstexten
+
+Die vorliegende Arbeit ist im Rahmen des [Lynx-Projektes](http://lynx-project.eu/) H20H20 am [DFKI](https://www.dfki.de/web/) entstanden.
 
 
 # Juristisches Korpus
