@@ -25,7 +25,6 @@ def read_dataset(filename):
         sentences.append(sentence)
         labels.append(label)
     f.close()
-    print('The dataset consists of {} sentences'.format(len(sentences)))
     return sentences, labels
 
 def build_list(filename):
@@ -70,17 +69,18 @@ def add_labels(sentences, gazetteers, label_name):
 
 
 def add_gazetteers(path):
+    print("Prepare gazetteers for train")
 
     # classes
-    PER = build_list('../gazetteers/personennamen.list')
-    LD = build_list('../gazetteers/laendernamen.list')
-    ST = build_list('../gazetteers/stadtnamen.list')
-    STR = build_list('../gazetteers/strassennamen.list')
-    LDS = build_list('../gazetteers/landschaftsbezeichnungen.list')
-    UN = build_list('../gazetteers/firmennamen.list')
-    GS = build_list('../gazetteers/gesetzesnamen.list')
-    VO = build_list('../gazetteers/verordnungsnamen.list')
-    VS = build_list('../gazetteers/vorschriftennamen.list')
+    PER = build_list('gazetteers/personennamen.list')
+    LD = build_list('gazetteers/laendernamen.list')
+    ST = build_list('gazetteers/stadtnamen.list')
+    STR = build_list('gazetteers/strassennamen.list')
+    LDS = build_list('gazetteers/landschaftsbezeichnungen.list')
+    UN = build_list('gazetteers/firmennamen.list')
+    GS = build_list('gazetteers/gesetzesnamen.list')
+    VO = build_list('gazetteers/verordnungsnamen.list')
+    VS = build_list('gazetteers/vorschriftennamen.list')
     sentences, labels = read_dataset(path)
 
 
@@ -115,21 +115,3 @@ def add_gazetteers(path):
         f.write('\n')
     f.close()
     print("File saved as {}".format(path.replace(".","_gaz.")))
-
-# check input
-if len(sys.argv) < 3:
-    print("Usage: python gazetteers.py trainPath testPath")
-    exit()
-
-train = str(sys.argv[1])
-if not os.path.isfile(train):
-    print("Error: train file does not appear to exist")
-    exit()
-
-test = str(sys.argv[2])
-if not os.path.isfile(test):
-    print("Error: test file does not appear to exist")
-    exit()
-
-add_gazetteers(train)
-add_gazetteers(test)
