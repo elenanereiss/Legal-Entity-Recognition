@@ -84,12 +84,7 @@ Das Korpus steht im CoNLL-2002-Format zur Verfügung. Die Daten sind in zwei Spa
 - CRF-FGL mit Features, Gazetteers und Lookup-Tabelle für die Wortähnlichkeit `fgl`.
 
 ## Training
-- [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/) installieren;
-- Um Modelle `fg` und `fgl` zu trainieren, ist es nötig, Gazetteers zu Daten hinzuzufügen. Dabei werden neue Dateien im gleichen Ordner, wo die originalen Dateien sind, als `_gaz` gespeichert. Im Ordner `src/` ausführen:
-```
-python gazetteers.py trainPath testPath
-```
-- Mit neuen Dateien ausführen:
+- [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/) installieren und ausführen:
 ```
 python crf.py modelName trainPath testPath
 ```
