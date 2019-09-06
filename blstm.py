@@ -9,7 +9,7 @@ from shutil import copyfile
 from keras import backend as K
 
 # check
-if len(sys.argv) < 5:
+if len(sys.argv) != 5:
     print("Usage: python blstm.py modelName trainPath devPath testPath")
     exit()
 
@@ -47,7 +47,7 @@ if not os.path.isfile(test):
 
 # create directory LER
 if not os.path.exists("data/LER/"):
-    os.mkdir("data/LER2/")
+    os.mkdir("data/LER/")
     print("create directory data/LER")
 
 # copy files to directory
