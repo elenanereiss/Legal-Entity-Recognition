@@ -3,6 +3,9 @@
 
 This work has been partially funded by the project Lynx, which has received funding from the EU's Horizon 2020 research and innovation programme under grant agreement no.~780602, see [http://www.lynx-project.eu](http://lynx-project.eu/).
 
+![](https://raw.githubusercontent.com/elenanereiss/Legal-Entity-Recognition/master/docs/example1.png)
+![](https://raw.githubusercontent.com/elenanereiss/Legal-Entity-Recognition/master/docs/example2.png)
+
 # Dataset of Legal Documents
 
 Court decisions from 2017 and 2018 were selected for the dataset, published online by the [Federal Ministry of Justice and Consumer Protection](http://www.rechtsprechung-im-internet.de). The documents originate from seven federal courts: Federal Labour Court (BAG), Federal Fiscal Court (BFH), Federal Court of Justice (BGH), Federal Patent Court (BPatG), Federal Social Court (BSG), Federal Constitutional Court (BVerfG) and Federal Administrative Court (BVerwG). 
