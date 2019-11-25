@@ -67,7 +67,7 @@ The dataset is freely available under the [CC-BY 4.0 license](https://creativeco
 
 ## Training
 
-- install [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/) and run (modelName=f|fg|fgl):
+- install [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/) and run (`modelName=f|fg|fgl`):
 ```
 python crf.py modelName trainPath testPath
 ```
@@ -84,7 +84,7 @@ python crf.py modelName trainPath testPath
 ## Training
 
 - install [BiLSTM-CNN-CRF](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf);
-- copy `blstm.py` to folder `emnlp2017-bilstm-cnn-crf/` choose a model (modelName=crf|blstm-crf|cnn-crf) and run:
+- copy `blstm.py` to folder `emnlp2017-bilstm-cnn-crf/` choose a model (`modelName=crf|blstm-crf|cnn-crf`) and run:
 ```
 python blstm.py modelName trainPath devPath testPath
 ```
