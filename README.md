@@ -11,39 +11,13 @@ Court decisions from 2017 and 2018 were selected for the dataset, published onli
 
 The dataset consists of 66,723 sentences with 2,157,048 tokens. The sizes of the seven court-specific datasets varies between 5,858 and 12,791 sentences, and 177,835 to 404,041 tokens. The distribution of annotations on a per-token basis corresponds to approx.~19--23 %. The Federal Patent Court (BPatG) dataset contains the lowest number of annotated entities (10.41 %).
 
-|                          | LER       |
-|--------------------------|-----------|
-| Token mit Satzzeichen    | 2.157.048 |
-| Token ohne Satzzeichen   | 1.868.355 |
-| Sätze                    | 66.723    |
-| Verteilung der Entitäten | 19,15 %   |
+![](https://raw.githubusercontent.com/elenanereiss/Legal-Entity-Recognition/master/docs/Size.png)
 
 ## Distribution of Entities
 
 The dataset includes two different versions of annotations, one with a set of 19 fine-grained semantic classes and another one with a set of 7 coarse-grained classes. There are 53,632 annotated entities in total, the majority of which (74.34 %) are legal entities, the others are person, location and organization (25.66 %).
 
-| Klasse | Bezeichnung        | Anzahl | Verteilung |
-|--------|--------------------|--------|------------|
-| **PER**    | Personen           | 1.747  | 3,26 %     |
-| **AN**     | Anwälte            | 111    | 0,21 %     |
-| **RR**     | Richter            | 1.519  | 2,83 %     |
-| **LD**     | Länder             | 1.429  | 2,66 %     |
-| **ST**     | Städte             | 705    | 1,31 %     |
-| **STR**    | Straßen            | 136    | 0,25 %     |
-| **LDS**    | Landschaften       | 198    | 0,37 %     |
-| **ORG**    | Organisationen     | 1.166  | 2,17 %     |
-| **UN**     | Unternehmen        | 1.058  | 1,97 %     |
-| **INN**    | Institutionen      | 2.196  | 4,09 %     |
-| **GRT**    | Gerichte           | 3.212  | 5,99 %     |
-| **MRK**    | Marken             | 283    | 0,53 %     |
-| **GS**     | Gesetze            | 18.520 | 34,53 %    |
-| **VO**     | Verordnungen       | 797    | 1,49 %     |
-| **EUN**    | Europäische Normen | 1.499  | 2,79 %     |
-| **VS**     | Vorschriften       | 607    | 1,13 %     |
-| **VT**     | Verträge           | 2.863  | 5,34 %     |
-| **RS**     | Rechtsprechungen   | 12.580 | 23,46 %    |
-| **LIT**    | Literatur          | 3.006  | 5,60 %     |
-|        | Anzahl Entitäten   | **53.632** | 100 %      |
+![](https://raw.githubusercontent.com/elenanereiss/Legal-Entity-Recognition/master/docs/Distribution.png)
 
 ## Output Format
 
@@ -120,7 +94,7 @@ python blstm.py modelName trainPath devPath testPath
 - [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/)
 - [SoMaJo](https://github.com/tsproisl/SoMaJo)
 
-#### Bitte zitieren:
+#### Please cite:
 
 ```
 @mastersthesis{mastersthesis,
