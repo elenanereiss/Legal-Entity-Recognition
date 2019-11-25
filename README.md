@@ -3,8 +3,7 @@
 
 This work has been partially funded by the project Lynx, which has received funding from the EU's Horizon 2020 research and innovation programme under grant agreement no.~780602, see [http://www.lynx-project.eu](http://lynx-project.eu/).
 
-![](https://raw.githubusercontent.com/elenanereiss/Legal-Entity-Recognition/master/docs/example1.png)
-![](https://raw.githubusercontent.com/elenanereiss/Legal-Entity-Recognition/master/docs/example2.png)
+![](https://raw.githubusercontent.com/elenanereiss/Legal-Entity-Recognition/master/docs/Example.png)
 
 # Dataset of Legal Documents
 
