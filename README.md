@@ -9,6 +9,8 @@ This work has been partially funded by the project Lynx, which has received fund
 
 Court decisions from 2017 and 2018 were selected for the dataset, published online by the [Federal Ministry of Justice and Consumer Protection](http://www.rechtsprechung-im-internet.de). The documents originate from seven federal courts: Federal Labour Court (BAG), Federal Fiscal Court (BFH), Federal Court of Justice (BGH), Federal Patent Court (BPatG), Federal Social Court (BSG), Federal Constitutional Court (BVerfG) and Federal Administrative Court (BVerwG). 
 
+## [Aannotation Guidelines](https://github.com/elenanereiss/Legal-Entity-Recognition/blob/master/docs/Annotationsrichtlinien.pdf) (German)
+
 ## Size
 
 The dataset consists of 66,723 sentences with 2,157,048 tokens. The sizes of the seven court-specific datasets varies between 5,858 and 12,791 sentences, and 177,835 to 404,041 tokens. The distribution of annotations on a per-token basis corresponds to approx. 19-23 %.
@@ -98,7 +100,7 @@ python blstm.py modelName trainPath devPath testPath
 
 #### References:
 
-Leitner, E. (2019). *Eigennamen- und Zitaterkennung in Rechtstexten*. Bachelor’s thesis, Universität Potsdam, Potsdam, 2.
+Leitner, E. (2019). [*Eigennamen- und Zitaterkennung in Rechtstexten*](https://github.com/elenanereiss/Legal-Entity-Recognition/blob/master/docs/Leitner_LER_BA.pdf). Bachelor’s thesis, Universität Potsdam, Potsdam, 2.
 
 ```
 @mastersthesis{mastersthesis,
@@ -110,7 +112,7 @@ Leitner, E. (2019). *Eigennamen- und Zitaterkennung in Rechtstexten*. Bachelor�
   month        = 2,}
 ```
 
-Leitner, E., Rehm, G., and Moreno-Schneider, J. (2019). Fine-grained Named Entity Recognition in Legal Documents. In Maribel Acosta, et al., editors, *Semantic Systems. The Power of AI and Knowledge Graphs. Proceedings of the 15th International Conference (SEMANTiCS2019)*, number 11702 in Lecture Notes in Computer Science, pages 272–287, Karlsruhe, Germany, 9. Springer. 10/11 September 2019.
+Leitner, E., Rehm, G., and Moreno-Schneider, J. (2019). [Fine-grained Named Entity Recognition in Legal Documents](https://link.springer.com/content/pdf/10.1007%2F978-3-030-33220-4_20.pdf). In Maribel Acosta, et al., editors, *Semantic Systems. The Power of AI and Knowledge Graphs. Proceedings of the 15th International Conference (SEMANTiCS2019)*, number 11702 in Lecture Notes in Computer Science, pages 272–287, Karlsruhe, Germany, 9. Springer. 10/11 September 2019.
 
 ```
 @inproceedings{leitner2019fine,
