@@ -98,6 +98,8 @@ python blstm.py modelName trainPath devPath testPath
 
 #### References:
 
+Leitner, E. (2019). *Eigennamen- und Zitaterkennung in Rechtstexten*. Bachelor’s thesis, Universität Potsdam, Potsdam, 2.
+
 ```
 @mastersthesis{mastersthesis,
   author       = {Elena Leitner}, 
@@ -107,6 +109,8 @@ python blstm.py modelName trainPath devPath testPath
   address      = {Potsdam},
   month        = 2,}
 ```
+
+Leitner, E., Rehm, G., and Moreno-Schneider, J. (2019). Fine-grained Named Entity Recognition in Legal Documents. In Maribel Acosta, et al., editors, *Semantic Systems. The Power of AI and Knowledge Graphs. Proceedings of the 15th International Conference (SEMANTiCS2019)*, number 11702 in Lecture Notes in Computer Science, pages 272–287, Karlsruhe, Germany, 9. Springer. 10/11 September 2019.
 
 ```
 @inproceedings{leitner2019fine,
