@@ -11,7 +11,7 @@ Court decisions from 2017 and 2018 were selected for the dataset, published onli
 
 ## Size
 
-The dataset consists of 66,723 sentences with 2,157,048 tokens. The sizes of the seven court-specific datasets varies between 5,858 and 12,791 sentences, and 177,835 to 404,041 tokens. The distribution of annotations on a per-token basis corresponds to approx. 19-23 %. The Federal Patent Court (BPatG) dataset contains the lowest number of annotated entities (10.41 %).
+The dataset consists of 66,723 sentences with 2,157,048 tokens. The sizes of the seven court-specific datasets varies between 5,858 and 12,791 sentences, and 177,835 to 404,041 tokens. The distribution of annotations on a per-token basis corresponds to approx. 19-23 %.
 
 ![](https://raw.githubusercontent.com/elenanereiss/Legal-Entity-Recognition/master/docs/Size.png)
 
@@ -96,7 +96,7 @@ python blstm.py modelName trainPath devPath testPath
 - [sklearn-crfsuite](https://sklearn-crfsuite.readthedocs.io/en/latest/)
 - [SoMaJo](https://github.com/tsproisl/SoMaJo)
 
-#### Please cite:
+#### References:
 
 ```
 @mastersthesis{mastersthesis,
@@ -108,4 +108,26 @@ python blstm.py modelName trainPath devPath testPath
   month        = 2,}
 ```
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Dieses Werk ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>.
+```
+@inproceedings{leitner2019fine,
+  author = {Elena Leitner and Georg Rehm and Julian Moreno-Schneider},
+  title = {{Fine-grained Named Entity Recognition in Legal Documents}},
+  booktitle = {Semantic Systems. The Power of AI and Knowledge
+                  Graphs. Proceedings of the 15th International Conference
+                  (SEMANTiCS 2019)},
+  year = 2019,
+  editor = {Maribel Acosta and Philippe Cudré-Mauroux and Maria
+                  Maleshkova and Tassilo Pellegrini and Harald Sack and York
+                  Sure-Vetter},
+  keywords = {aip},
+  publisher = {Springer},
+  series = {Lecture Notes in Computer Science},
+  number = {11702},
+  address = {Karlsruhe, Germany},
+  month = 9,
+  note = {10/11 September 2019},
+  pages = {272--287},
+  pdf = {https://link.springer.com/content/pdf/10.1007%2F978-3-030-33220-4_20.pdf}}
+```
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
