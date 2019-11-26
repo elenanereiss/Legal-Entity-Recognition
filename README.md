@@ -1,7 +1,7 @@
 # Legal-Entity-Recognition
 ## Fine-grained Named Entity Recognition in Legal Documents
 
-This work has been partially funded by the project Lynx, which has received funding from the EU's Horizon 2020 research and innovation programme under grant agreement no.~780602, see [http://www.lynx-project.eu](http://lynx-project.eu/).
+This work has been partially funded by the project Lynx, which has received funding from the EU's Horizon 2020 research and innovation programme under grant agreement no. 780602, see [http://www.lynx-project.eu](http://lynx-project.eu/).
 
 ![](https://raw.githubusercontent.com/elenanereiss/Legal-Entity-Recognition/master/docs/Example.png)
 
@@ -11,7 +11,7 @@ Court decisions from 2017 and 2018 were selected for the dataset, published onli
 
 ## Size
 
-The dataset consists of 66,723 sentences with 2,157,048 tokens. The sizes of the seven court-specific datasets varies between 5,858 and 12,791 sentences, and 177,835 to 404,041 tokens. The distribution of annotations on a per-token basis corresponds to approx.~19--23 %. The Federal Patent Court (BPatG) dataset contains the lowest number of annotated entities (10.41 %).
+The dataset consists of 66,723 sentences with 2,157,048 tokens. The sizes of the seven court-specific datasets varies between 5,858 and 12,791 sentences, and 177,835 to 404,041 tokens. The distribution of annotations on a per-token basis corresponds to approx. 19-23 %. The Federal Patent Court (BPatG) dataset contains the lowest number of annotated entities (10.41 %).
 
 ![](https://raw.githubusercontent.com/elenanereiss/Legal-Entity-Recognition/master/docs/Size.png)
 
