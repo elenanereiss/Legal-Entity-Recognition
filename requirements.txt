@@ -8,7 +8,7 @@ html5lib==1.0.1
 keras==2.2.4
 keras-applications==1.0.8
 keras-preprocessing==1.1.0
-numpy==1.16.4
+numpy==1.22.0
 protobuf==3.9.1
 pynif==0.1.4
 scipy==1.2.1
