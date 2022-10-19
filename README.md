@@ -1,4 +1,8 @@
 # Legal-Entity-Recognition
+
+## German LER Dataset on :hugs: Hugging Face (Update 2022-10-19)
+Now available on Huggingface [https://huggingface.co/datasets/elenanereiss/german-ler](https://huggingface.co/datasets/elenanereiss/german-ler)
+
 ## Fine-grained Named Entity Recognition in Legal Documents
 
 This work has been partially funded by the project Lynx, which has received funding from the EU's Horizon 2020 research and innovation programme under grant agreement no. 780602, see [http://www.lynx-project.eu](http://lynx-project.eu/).
